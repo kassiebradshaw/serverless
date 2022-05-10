@@ -9,5 +9,5 @@ class handler(BaseHTTPRequestHandler):
 
         message = "Howdy y'all!"
 
-        self.wfile.write(message)
+        self.wfile.write(message.encode())
         return
